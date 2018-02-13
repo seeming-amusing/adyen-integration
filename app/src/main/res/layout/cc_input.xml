@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/credit_card_input"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="#9fff"
+  android:padding="@dimen/padding_default"
+  app:behavior_peekHeight="0dp"
+  app:layout_behavior="@string/bottom_sheet_behavior">
+
+  <EditText
+    android:id="@+id/number"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_cc_number"
+    android:inputType="number"
+    android:maxLength="16"
+    android:text="4111111111111111"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:visibility="gone" />
+
+  <EditText
+    android:id="@+id/holder_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_holder_name"
+    android:text="Test User"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/number"
+    tools:visibility="gone" />
+
+  <EditText
+    android:id="@+id/cvc"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:hint="@string/hint_cvc"
+    android:inputType="number"
+    android:maxLength="4"
+    android:text="737"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/holder_name" />
+
+  <EditText
+    android:id="@+id/expiration"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:hint="@string/hint_expiration"
+    android:inputType="number"
+    android:maxLength="4"
+    android:text="1020"
+    app:layout_constraintStart_toEndOf="@id/cvc"
+    app:layout_constraintTop_toBottomOf="@id/holder_name"
+    tools:visibility="gone" />
+
+  <Button
+    android:id="@+id/btn_submit_details"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="@string/submit"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/cvc" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,3 +1,16 @@
 <resources>
+
   <string name="app_name">Adyen Integration</string>
+
+  <string name="title_activity_main">MainActivity</string>
+
+  <string name="pay_with_card">Pay w/ Card</string>
+  <string name="pay_with_token">Pay w/ Saved Payment</string>
+  <string name="submit">Submit</string>
+
+  <string name="hint_cc_number">Credit card number</string>
+  <string name="hint_holder_name">Holder name</string>
+  <string name="hint_cvc">CVC</string>
+  <string name="hint_expiration">(MM/YY)</string>
+
 </resources>
